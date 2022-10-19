@@ -1,1 +1,1 @@
-alert("Colaboración exitosa")
+alert("Colaboración exitosa nueva")
