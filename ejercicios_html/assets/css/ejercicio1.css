@@ -1,0 +1,18 @@
+* {
+    display:grid;
+    font-size: 18;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(144, 144, 144);
+}
+nav{
+    background-color: rgb(14, 213, 34);
+}
+
+#Main{
+    background-color: rgb(234, 249, 12);
+}
+#Related{
+    background-color: gray;
+}
