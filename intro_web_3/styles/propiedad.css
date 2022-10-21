@@ -1,0 +1,14 @@
+*{
+    background-color: rgb(26, 180, 34);
+}
+#titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 11px;
+    color: rgba(rgb(255,83,83), rgb(190,75,156), rgb(253,143,180), alpha);
+    border: 3px;
+    width: 100px;
+    height: 60px;
+    overflow: scroll;
+    margin: 60px;
+    padding: 10px;
+}
