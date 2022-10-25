@@ -1,3 +1,35 @@
-*{
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lato&family=Roboto+Mono:ital,wght@1,200&family=Shalimar&family=Source+Sans+Pro:wght@200&display=swap');
+
+.parrafo1{
+    font-family:cursive;
+}
+.parrafo2{
+    font-family: 'Comforter Brush', cursive;
+    font-weight: 700;
+    font-size: 3em;
+}
+.padre{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+}
+.fa-solid fa-cat{
+    font-size: 5em;
+}
+.parrafoEjercicio1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+}
+.parrafoEjercicio2{
+    font-family: 'Shalimar', cursive;
+    font-size: 4rem;
+}
+.parrafoEjercicio3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 31px;
+}
+#texto{
+    color: blue;
+}
+.icons{
+    font-size: 2em;
 }
