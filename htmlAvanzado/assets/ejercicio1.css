@@ -1,0 +1,29 @@
+form{
+    width: 350px;
+    padding: 75px;
+    background-color: green;
+    color: white;
+    border:10px solid cyan;
+    border-radius: 20px;
+    display: inline-block;
+}
+div{
+    padding-left: 30px;
+}
+fieldset{
+    display: inline-block;
+    border: none; 
+    margin: 0 auto;
+}
+div>input{
+
+    border-color: red;
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+#confirmar{
+    margin-bottom: 0%;
+    padding: 0%;
+}
