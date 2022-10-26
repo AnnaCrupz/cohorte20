@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.padre{
+    border: 3px dashed green;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+.menu{
+    display: flex;
+    width: 400px;
+}
+.logo{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    width: 100px;
+}
+.cuadro{
+    width: 80px;
+    height: 80px;
+}
+.uno{
+    background-color:cadetblue;
+}
+.dos{
+    background-color: darkgoldenrod;
+}
+.tres{
+    background-color:blanchedalmond;
+}
+/*Justyfy content: horizontal
+align content: vertical
+*/
+/*
+@media query
+@media(){}
+Condicional si se cumple una condición, entonces se aplica lo que hay dentro de la regla
+
+450px-celular
+800px-tablet
+1200px-desktop
+*/
+@media (max-width:500px) {
+    .padre{
+        background-color: blueviolet;
+        flex-direction: columnn;
+        align-items: center;
+        height: auto;
+    }
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

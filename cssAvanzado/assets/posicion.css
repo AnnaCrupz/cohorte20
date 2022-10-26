@@ -1,0 +1,35 @@
+/*Position static*/
+/*Relative: tiene como base la posicion original del elemento*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.cuadro{
+    border: 10px solid aqua;
+    width: 200px;
+    height: 200px;
+}
+.padre{
+    border:3px dashed green;
+    height: 800px;
+
+}
+.uno{
+    background-color: red;
+    position: relative;
+    /*top left6 bottom right*/
+    /*top: 20px; left: 40px;*/
+}
+.dos{
+   /* background-color: greenyellow;
+    position: absolute;
+    left: 300px;
+    top:200px; */
+}
+.tres{
+    background-color: coral;
+    position: sticky;
+    top:0px;
+    /*top 
+    Debe haber suficiente espacio en el elemento*/
+}
