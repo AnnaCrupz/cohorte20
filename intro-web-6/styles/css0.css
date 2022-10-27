@@ -13,3 +13,16 @@
 .adv{
     background-color: rgb(233, 86, 86);
 }
+.ancho{
+    background-color: yellowgreen;
+}
+.one{
+    background-color: cadetblue;
+}
+.two{
+    background-color: coral;
+}
+.four{
+    border: 5px solid rosybrown;
+    background-color: antiquewhite;
+}
