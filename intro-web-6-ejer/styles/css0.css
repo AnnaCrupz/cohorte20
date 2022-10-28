@@ -1,0 +1,28 @@
+.container-sm{
+    background-color: aqua;
+}
+.container-md{
+    background-color: blueviolet;
+}
+.text-center{
+    background-color: antiquewhite;
+}
+.uno{
+    background-color: cadetblue;
+}
+.adv{
+    background-color: rgb(233, 86, 86);
+}
+.ancho{
+    background-color: yellowgreen;
+}
+.one{
+    background-color: cadetblue;
+}
+.two{
+    background-color: coral;
+}
+.four{
+    border: 5px solid rosybrown;
+    background-color: antiquewhite;
+}
