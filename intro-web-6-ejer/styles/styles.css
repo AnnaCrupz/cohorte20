@@ -46,3 +46,8 @@
 .pie{
     background-color:cadetblue;
 }
+
+.contenedorPanel{
+    height: 200px;
+    width: 200px;
+}

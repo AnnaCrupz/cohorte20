@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     -->
+    <link rel="stylesheet" href="./assets/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/img/style.css">
+</head>
+  <body>
+    <!-- <h1>Hello, world!</h1>  -->
+    <script src="./assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://mexico.generation.org/">Generation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://mexico.generation.org/" target="_blank">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dropdown</a>
+              </li>
+            </ul>
+          
+            <!--     <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form> -->
+       
+          </div>
+        </div>
+      </nav>
+       <!-- Carrusel con indicadores INICIO -->
+       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="d-block w-100 altura-img" alt="cat1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="d-block w-100 altura-img" alt="cat2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1529257414772-1960b7bea4eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100 altura-img" alt="cat3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Carrusel FIN -->
+    <!-- CARDS -->
+    <h2 class="my-5">Tarjetas</h2>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div  class="card">
+                <img class="imagen" src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="imagen" src="https://img.freepik.com/foto-gratis/cerca-gato-cerca-bombilla_23-2149241113.jpg?w=740&t=st=1666907554~exp=1666908154~hmac=a35fa78da2cccd528e91636f9c2b00b63912242c82720efdd79abaa622b8db2b" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="imagen" src="https://img.freepik.com/fotos-premium/gatito-gris-raza-scottish-fold-juega-sobre-fondo-gris_173815-10.jpg?w=740" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="imagen" src="https://img.freepik.com/foto-gratis/cerca-hermoso-gato-escondido-bolsa-papel_23-2149216379.jpg?w=740&t=st=1666907667~exp=1666908267~hmac=1eaeff8738f5a5381d35e3a0f233fcf7a75258ae723a1e66353478bac409c334" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+    </div>
+    </div>
+    <!-- CARDS END -->
+    <!-- DIVISION -->
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-md bg-primary">
+          <h2>Adoptar un perro puede ser abrumador </h2>
+          Adoptar un perro puede ser abrumador si no sabes por dónde empezar. Para ayudar a aliviar ese estrés y darle la bienvenida a su nuevo hogar, considera esto: <br>
+          1. Reúne sus suministros. Además de lo básico, un collar y una correa, así como tazones de comida y agua, también necesitará una cama, juguetes, golosinas y artículos de aseo personal. <br>
+          2. Cambia la comida de tu perro lentamente. Incorpora algo de la comida que le daban en el refugio y cámbiala gradualmente por la que deseas servirle con regularidad para evitar problemas de digestión. <br>
+          3. Empieza a entrenarlo de inmediato. Incluso los perros adultos que previamente adoptaron hábitos domésticos requerirán un poco de entrenamiento. Cuanto antes, mejor. <br>
+        4. Visita a un veterinario. Durante la primera semana en casa debe visitar a un veterinario para una revisión médica y para asegurarte de que tenga todas sus vacunas.
+         </div>
+        <div class="col-md bg-light">
+          <h2>Los gatos</h2>
+           Son generalmente mascotas muy limpias, ordenadas y pueden ser bastante independientes cuando crecen. Cuando adoptes a tu gatito, debes estar preparado con algunas cosas básicas para que se estén sanos, felices y sean amigables: <br>
+          1. Una bandeja de arena o dos. Para muchos es instintivo usarla, pero algunos necesitan un poco más de estímulo para ir al lugar correcto. Ayuda a tu gatito a aprender a dónde ir al baño colocándolo en la bandeja después de comer o después de que se haya despertado de una siesta. <br>
+          2. La dieta y la nutrición. Tu gatito necesita desarrollarse y solo puede hacerlo si recibe la alimentación y la nutrición adecuadas. En Hill's te proporcionamos alimentos equilibrados con precisión para garantizar la salud y el bienestar de tu nuevo amigo. <br>
+          3. Visita al veterinario. Debes llevarlo de forma regular para que le realice controles y vacunas. Asegúrate de que cuando tu gatito esté enfermo, reconozcas los signos a tiempo para que obtenga la atención médica adecuada.
+         </div>
+        <div class="col-md bg-secondary">
+          <h2>Aspectos a considerar</h2>
+          Una parte importante de mantener a tu perro en buenas condiciones es asegurarse de que tenga una piel y un pelaje saludables. La cantidad de cuidados que tu perro necesita variará, pero deben tener un buen régimen de aseo.
+          1. Aseo en casa. Es una gran oportunidad para que pases tiempo con tu perro, especialmente porque a la mayoría les encanta la atención que reciben con un buen cepillado. Un pelaje sano se caracteriza por ser suave y relativamente liso incluso en razas de pelo corto. El pelaje debe ser brillante, pero no grasoso y tampoco debe tener un olor fuerte. <br>
+          2. Cepillar con regularidad. El cepillado es la parte más importante de la preparación de un perro. Las razas de pelo largo deberán cepillarse dos veces por semana, mientras que los perros que son propensos a perder pelo o que tienen una capa interna gruesa, deben cepillarse una vez a la semana. <br>
+          3. Hora del baño. El "olor a perro" generalmente es causado por una acumulación de bacterias y aceite en el pelaje de un perro. Y aunque es probable que tu amigo esté perfectamente feliz sin un baño, un buen lavado eliminará esta acumulación. A menos que tu perro esté particularmente sucio (con barro, heces, etc.), no lo bañes más de una vez al mes. <br>
+          4. Dieta adecuada. El pelo está compuesto principalmente de proteínas y cuanto mejor sea la dieta de tu perro, mejor será su pelaje. Los alimentos ricos en ácidos grasos esenciales son especialmente buenos para ello. Si tu perro muestra signos de problemas con su pelo o piel, entonces la dieta puede ser la culpable y debes hablar con tu veterinario.
+  
+        </div>
+      </div>
+    </div>
+    <!-- END DIVISION -->
+    <!-- VIDEO -->
+    <div class="container-xxl my-3">
+        <div class="row">
+          <div class="column bg-dark contenedorPanel descVideo">
+            <h2>Mira el siguiente video</h2>
+            <p>Razones para adoptar un gato:</p>
+          </div>
+          <div class="embed">
+            <iframe src="https://www.youtube.com/embed/cNE1ZHIylkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+  </div>
+    <!-- END VIDEO -->
+    
+  <!-- FORMULARIO -->
+  <div class="row">
+    <div class="col-6" bg-primary></div>
+    <div class="col-6">
+      <form class="row">
+        <fieldset class="field1">
+          <legend><h2>Contactanos </h2></legend>
+        <div class="col-md-8">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+
+        <div class="col-md-8">
+          <label for="inputAddress" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234">
+        </div>
+        <div class="col-md-8">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity"></div>
+        <div class="col-md-8">
+          <label for="inputState" class="form-label">Estado</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>México</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Código Postal</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <label for="Comentarios" class="form-label">Comentarios: </label>
+          <input type="text" class="form-control" id="Comentarios" placeholder="Ingrese su comentario">
+        </div>
+      <div class="col-12">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+      </fieldset>
+      </form>
+    </div>
+  </div>
+  <!-- END FORMULARIO -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Pie de pagina -->
+    <div class="col-12 bg-primary">
+      Gracias por visitar mi página 
+    </div>
+  
+  <!-- FIN -->
+  </body>
+</html>
