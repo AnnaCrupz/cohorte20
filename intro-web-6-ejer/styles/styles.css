@@ -1,0 +1,53 @@
+*{
+    display: inline-block;
+}
+.titulo{
+    background-color: blue;
+    color: white;
+}
+.navegar{
+    background-color: gray;
+    height: 80px;
+    color: white;
+}
+.navi{
+  padding-top:21px ;
+  padding-left:21px ;
+}
+.primero{
+    margin-right: 50px;
+
+}
+.lateral{
+    border: 5px dashed darkcyan;
+    display: flex;
+    flex-wrap: inherit;
+    height: 440px;
+}
+.Productos{
+    border: 10px solid white;
+    width: 350px;
+    height: 150px;
+    display: flex;
+}
+.Producto1{
+    background-color: blue;
+}
+.Producto2{
+    background-color: yellow;
+}
+.Producto3{
+    background-color: red;
+}
+.contenedor1{
+   height: 200px;
+   
+}
+.pie{
+    background-color:cadetblue;
+}
+
+.contenedorPanel{
+    height: 200px;
+    width: 200px;
+}
