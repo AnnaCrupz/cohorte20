@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .azul{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="etiqueta1">---🎇Ejemplo de DOM🎇---</h1>
+    
+    <p id="parrafo1" class="azul">Hola desde DOM</p>
+    <p id="otroParrafo" class="azul">Soy otro parrafo</p>
+    
+    <script>
+        let etiqueta=document.getElementById("etiqueta1").innerHTML;
+        console.log(etiqueta);
+        let parrafo=document.getElementById("parrafo1");
+        console.log(parrafo.innerHTML);
+
+        //getElementByTagName
+        let parrafos=document.getElementsByTagName("p");
+        console.log("Numero de elementos <p>",parrafos.length);
+
+        for (let index = 0; index < parrafos.length; index++) {
+            const element = parrafos[index].outerText;
+            console.log(`el elemento es ${parrafos[index].innerHTML}`);
+            
+        }
+        //getElementByClassName
+        let claseAzul=document.getElementsByClassName("azul");
+        for (let index = 0; index < claseAzul.length; index++) {
+            const element = claseAzul[index].outerText;
+            console.log(`Elementos de la claseAzul ${index} ${element}`);
+            
+        }
+        for (const iterator of claseAzul) {
+            console.log("Desde for...of",iterator.outerText);
+        }
+    </script>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

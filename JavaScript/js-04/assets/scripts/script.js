@@ -82,7 +82,7 @@ let b=[[1,2,3],[4,5,6],[7,8,9]];
 
 let c_=[];
 
-for (let indexA = 0; indexA < a.length; indexA++) {
+for (let indexA = 0; indexA < a.length; indexA++) { //pasa por cada fila
     let fila=[];
     for (let indexAA = 0; indexAA < a[indexA].length; indexAA++) {
             console.log(a[indexA][indexAA]*b[indexAA][indexA]);
