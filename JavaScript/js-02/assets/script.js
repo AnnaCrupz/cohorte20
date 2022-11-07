@@ -50,9 +50,9 @@ console.log("Llamando a la funcion anonima", funcion0(5));
 
 let function01=function(caracteres){
     return "Hola "+caracteres;
-}('Lunes');
+}('Lunes');  //Manda Lunes como parametro
 console.log(function01);
-
+//Función flecha
 let suma=(x,y)=>{
     return x+y;
 }
@@ -86,11 +86,11 @@ let precioTotalFlecha=(precio,porcentajeImpuesto)=>{
     return precioTotal;
 }
 console.log(precioTotalFlecha(23.34,16));
-
+//Objetos
 let miObjeto={
-    nombre:"Juan",
+    nombre:"Juan",  //atributo
     edad:30,
-    datos: function () {   
+    datos: function () {   //Metodo
         let mensaje= "Tu nombre es: "+this.nombre;
         mensaje+=" tienes "+this.edad;
         console.log(mensaje);
@@ -98,10 +98,11 @@ let miObjeto={
 };
 miObjeto.datos()
 
-let constructor=function(){
+let constructor=function(){   //Constructor
     let obejetoPersona={
         nombre:"Juan",
         nss:2357,
+        idioma:'es',
         datosPersona: function () {
             let msj="eres "+this.nombre+" nss: "+this.nss;
             console.log(msj);
@@ -109,6 +110,16 @@ let constructor=function(){
         otroMetodo: function (parametro) {
             let numero=8;
             console.log("La suma es "+(numero+parametro));
+        },
+        get datosP(){  //Funcion a para mostrar a JS que se va a mandar a llamar 
+            let msj="eres "+this.nombre+" nss: "+this.nss;
+            console.log(msj);
+        },
+        get lang(){  
+            return this.idioma.toUpperCase();
+        },
+        set lang(lang){ //Modifica el valor
+            return this.idioma=lang.toUpperCase();
         }
     }
     return obejetoPersona;
@@ -116,9 +127,14 @@ let constructor=function(){
 let varObjReg=constructor();
 console.log(varObjReg.datosPersona());
 console.log(varObjReg.otroMetodo(5));
+console.log(varObjReg.datosP);
+console.log(varObjReg.idioma);
+console.log(varObjReg.lang);
+varObjReg.idioma="en"
+console.log(varObjReg.idioma);
+console.log(varObjReg.lang);
 
-
-
+//Otra forma del métodp constructor
 function Persona(nombre, nss){
     this.nombre=nombre,
     this.nss=nss,
@@ -145,3 +161,45 @@ let precioTotalConstruct=function (precio,impuesto) {
 }
 let compra1=new precioTotalConstruct(500,16);
 console.log(compra1.costoTotal());
+
+//Funcion constructor Persona
+function Personas(nombre,apellido,email){
+    this.nombre=nombre;
+    this.apellido=apellido;
+    this.email=email;
+    this.nombreCompleto=function(){
+        return this.nombre+' '+this.apellido;
+    }
+}
+Personas.prototype.tel='555555555'; //Agrega un nuevo atributo
+
+let juan=new Personas("Juan","Perez","jperez@gmail.com");
+console.log(juan);
+juan.nombre="Juan Carlos"; //Acceder a un atributo dela clase para modificarlo
+console.log(juan);
+console.log(juan.nombreCompleto());
+juan.tel="5566123125"
+console.log(juan.tel);
+
+//Método call
+//Creamos un objeto
+let persona1={
+    nombre:'Ana',
+    apellido:'Cruz',
+    muestraNombre: function(titulo){
+        return titulo+'. '+this.nombre+' '+this.apellido;
+    }
+}
+let persona2={
+    nombre:'Juan',
+    apellido:'Perez'
+}
+let persona3={
+    nombre:'Josué',
+    apellido:'Rangel'
+}
+console.log(persona1.muestraNombre("lic"));
+console.log(persona1.muestraNombre.call(persona2,'ing')); 
+//Se pueden utilizar métodos definidos en otros objetos
+let arregloPersona3=["Dr"]
+console.log(persona1.muestraNombre.apply(persona3,arregloPersona3));
