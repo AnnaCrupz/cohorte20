@@ -1,0 +1,14 @@
+{
+  "name": "primer_proyecto",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto NPM de mi alegria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AnnaCrupz",
+  "license": "ISC",
+  "dependencies": {
+    "parrotsay-api": "^0.1.1"
+  }
+}
