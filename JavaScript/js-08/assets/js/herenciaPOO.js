@@ -18,6 +18,9 @@ class Persona{
     get nombreCompleto(){
         return this._nombre+' '+this._apellido;
     }
+    get toString(){
+        return this.nombreCompleto;
+    }
 }
 
 let persona1=new Persona("Juan","Perez");
@@ -26,6 +29,7 @@ console.log(persona1.nombre);
 persona1.nombre="Juan Carlos";
 console.log(persona1.nombre);
 console.log(persona1.nombreCompleto);
+console.log(persona1.toString);
 
 class Empleado extends Persona{
         constructor(nombre,apellido,empresa){
@@ -38,8 +42,17 @@ class Empleado extends Persona{
         set empresa(empresa){
             this._empresa=empresa;
         }
+        get nombreCompleto(){
+            return super.nombreCompleto+' Empresa: '+this._empresa;
+        }
+        
     }
 
 let empleado1=new Empleado(persona1.nombre,persona1.apellido,"bimbo");
 console.log(empleado1);
 console.log(empleado1.nombreCompleto);
+
+Object.prototype.toString()
+console.log(Object.prototype.toString());
+
+console.log(empleado1.toString);
