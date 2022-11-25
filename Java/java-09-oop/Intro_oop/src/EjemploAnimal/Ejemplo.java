@@ -10,6 +10,9 @@ public class Ejemplo {
 		System.out.println("Tiene "+animal1.getEdad()+" años.");
 		animal1.setRaza("europeo domestico");
 		System.out.println(animal1.toString());
+		
+		Animal otroAnimal=new Animal("pulga","pulga1",2);
+		System.out.println(otroAnimal.toString());
 	}
 
 }
