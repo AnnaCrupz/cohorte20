@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/img/style.css">
+</head>
+  <body>
+    <!-- <h1>Hello, world!</h1>  -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://mexico.generation.org/">Generation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://mexico.generation.org/" target="_blank">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dropdown</a>
+              </li>
+            </ul>
+          
+            <!--     <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form> -->
+       
+          </div>
+        </div>
+      </nav>
+       <!-- Carrusel con indicadores INICIO -->
+       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="d-block w-100 altura-img" alt="cat1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="d-block w-100 altura-img" alt="cat2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1529257414772-1960b7bea4eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100 altura-img" alt="cat3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Carrusel FIN -->
+    <!-- CARDS -->
+    <h2 class="my-5">Tarjetas</h2>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div  class="card">
+                <img class="imagen" src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="imagen" src="https://img.freepik.com/foto-gratis/cerca-gato-cerca-bombilla_23-2149241113.jpg?w=740&t=st=1666907554~exp=1666908154~hmac=a35fa78da2cccd528e91636f9c2b00b63912242c82720efdd79abaa622b8db2b" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="imagen" src="https://img.freepik.com/fotos-premium/gatito-gris-raza-scottish-fold-juega-sobre-fondo-gris_173815-10.jpg?w=740" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="imagen" src="https://img.freepik.com/foto-gratis/cerca-hermoso-gato-escondido-bolsa-papel_23-2149216379.jpg?w=740&t=st=1666907667~exp=1666908267~hmac=1eaeff8738f5a5381d35e3a0f233fcf7a75258ae723a1e66353478bac409c334" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+    </div>
+    <!-- CARDS END -->
+    <!-- DIVISION -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 bg-primary">
+          <h2>Mira el siguiente video</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa quasi iure ab in. Optio eius minus expedita vel minima quas aliquid id, saepe voluptate vero. Aliquid minus veritatis officia.
+         </div>
+        <div class="col-md-6 bg-dark">
+          <h2>Mira el siguiente video</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa quasi iure ab in. Optio eius minus expedita vel minima quas aliquid id, saepe voluptate vero. Aliquid minus veritatis officia.
+      </div>
+        <div class="col-md-4 bg-secondary">
+          <h2>Mira el siguiente video</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa quasi iure ab in. Optio eius minus expedita vel minima quas aliquid id, saepe voluptate vero. Aliquid minus veritatis officia.
+        </div>
+      </div>
+    </div>
+    <!-- END DIVISION -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
